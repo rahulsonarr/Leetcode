@@ -25,7 +25,7 @@ The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit int
 
 Follow up: Can you solve the problem in O(1) extra space complexity? (The output array does not count as extra space for space complexity analysis.)
 
-###Solution
+**Solution**
 To solve the "Product of Array Except Self" problem without using division and with O(n) time complexity, you can approach it by calculating two products for each element:
 
 Left Product: The product of all elements to the left of the current index.
@@ -41,7 +41,7 @@ Initialize an output array answer of the same length as nums and fill it with 1'
 Compute the left products and store them directly in answer.
 Traverse from the end of the array and compute the right products on the fly, updating the output array accordingly.
 
-##Solution in Python:
+**Solution in Python:**
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         n = len(nums)
